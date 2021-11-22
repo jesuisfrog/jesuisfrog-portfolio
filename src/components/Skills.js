@@ -144,7 +144,7 @@ const cards = [
   ,
   {
     id: 1,
-    title: "React for WEB & Mobile",
+    title: "React for Web & Mobile",
     description: "",
     image: "assets/images/react.jpg",
     imageRatio: 730 / 1030,
