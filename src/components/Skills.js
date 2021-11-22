@@ -50,7 +50,7 @@ function Card({ children }) {
   return (
     <animated.div
       ref={ref}
-      className="card"
+      className="card skills"
       onMouseEnter={() => setHovered(true)}
       onMouseMove={({ clientX, clientY }) => {
         // Get mouse x position within card
@@ -121,7 +121,7 @@ function Info() {
     <div>
       <h1
         style={{
-          color: "var(--light-text)",
+          color: "white",
           fontSize: 38,
           ontSize: "5em",
           textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)",
@@ -136,7 +136,7 @@ function Info() {
 const cards = [
   {
     id: 0,
-    title: "Web development ⚡️",
+    title: "Web Development",
     description: "",
     image: "assets/images/web.jpg",
     imageRatio: 784 / 1016,
@@ -151,7 +151,7 @@ const cards = [
   },
   {
     id: 2,
-    title: "Back-end with Nodejs 🚀",
+    title: "Back-end with Nodejs",
     description: "",
     image: "assets/images/backend.jpg",
     imageRatio: 730 / 1030,

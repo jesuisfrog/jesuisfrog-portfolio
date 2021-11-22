@@ -64,9 +64,9 @@ export default class SplashHeader extends Component {
           </h2>
           <h3>A full stack engineer </h3>
 
-          <h1 style={{ fontStyle: "italic", marginTop: 120}}>
-            Click & Drag around !
-          </h1>
+          <h3 style={{ fontStyle: "italic", marginTop: 120}}>
+            Click & drag interaction!
+          </h3>
         </div>
       </div>
     );

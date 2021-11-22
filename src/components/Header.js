@@ -1,64 +1,55 @@
 import React, { Component } from "react";
 import Toggle from './Toggle';
+import { Nav, Navbar, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 
-export default class Header extends Component {
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isNavOpen: false,
+    };
+    this.toggleNav = this.toggleNav.bind(this);
+  }
+
+  toggleNav() {
+    this.setState({
+      isNavOpen: !this.state.isNavOpen
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
-        <header
-          className="sticky-top"
-          style={{
-            backgroundColor: "#000000",
-            textColor: "#ffffff",
-            fontSize: 20,
-            padding:10,
-          }}
-        >
-          <nav id="nav-wrap sticky-top ">
-            <ul id="nav" className="nav">
-              <li className="current">
-                <a
-                  className="m-4"
-                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                  href="#home"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="mr-4"
-                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                  href="#skill"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  className="mr-4"
-                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                  href="#project"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
+        <Navbar dark sticky="top" expand="md" className="h-100" style={{ "backgroundColor": "black" }}>
+          <div className="container">
 
-                  style={{ backgroundColor: "#000000", color: "#ffffff" }}
-                  href="#contact"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <Toggle/>
-              </li>
-            </ul>
-          </nav>
-        </header>
+            <NavbarToggler onClick={this.toggleNav} />
+            <Collapse isOpen={this.state.isNavOpen} navbar>
+              <Nav navbar>
+                <NavItem className="nav-link">
+                  <a href="#home">Home</a>
+                </NavItem>
+                <NavItem className="nav-link">
+                  <a href="#skill">Skills</a>
+                </NavItem>
+                <NavItem className="nav-link">
+                  <a href="#project">Projects</a>
+                </NavItem>
+                <NavItem className="nav-link">
+                  <a href="#contact">Contact</a>
+                </NavItem>
+                <NavItem className="nav-link">
+                  <a href="assets/Michael_Baglio_Resume_2021.pdf" target="_blank" download>Resume</a>
+                </NavItem>
+                <Toggle />
+              </Nav>
+            </Collapse>
+          </div>
+        </Navbar>
       </React.Fragment>
-    );
+    )
   }
 }
+
+export default Header;
+

@@ -54,19 +54,7 @@ class ProjectCard extends Component {
                       textAlign: "left",
                     }}
                   >
-                    {project.frontend}
-                  </h5>
-                </div>
-                <div className="col ">
-                  <h5
-                    style={{
-                      ontSize: "5em",
-                      fontStyle: "italic",
-
-                      textAlign: "left",
-                    }}
-                  >
-                    {project.backend}
+                    {project.tech}
                   </h5>
                 </div>
               </div>
@@ -102,7 +90,7 @@ class ProjectCard extends Component {
                           }}
                         >
                           <a
-                            href={project.github1}
+                            href={project.github}
                             style={{
                               color: "#000000",
                             }}
@@ -187,11 +175,6 @@ class ProjectCard extends Component {
         </div>
 
         <div className="col-12">{directory}</div>
-        {/* <div className="row">
-          <div className=" col-lg-10 m-1">
-            {this.renderSelectedProject(this.state.selectedProject)}
-          </div>
-        </div> */}
       </div>
     );
   }

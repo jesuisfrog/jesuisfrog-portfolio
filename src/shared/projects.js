@@ -4,37 +4,34 @@ export const PROJECTS = [
     name: "Hobby Tabletop RPG Site",
     image: "assets/images/pergasha-portfolio.png",
     live: "http://www.ormandis.com/pergasha/home.html",
-    github1:
+    github:
       "https://github.com/jesuisfrog/Pergasha-Website",
 
     description:
       "References for the D&D homebrew setting: Pergasha.",
-    frontend: "Technology used: Jquery, Vanilla Javascript, Bootstrap",
-    backend: "",
+    tech: "Technology used: Jquery, Vanilla Javascript, Bootstrap",
   },
   {
     id: 1,
     name: "Current Portfolio Site",
     image: "assets/images/portfolio.png",
-    // live: "https://clairexilu.com",
-    github1:
+    live: "https://hopskipcode.netlify.app/",
+    github:
       "https://github.com/jesuisfrog/jesuisfrog-portfolio",
 
     description:
-      "My portfolio site is using React-fluid-animation and React-spring libraries, so the viewers can draw and play with the cards.",
-    frontend: "Technology used: React JS",
-    backend: "",
+      "This portfolio uses React-fluid-animation and React-spring libraries, so the viewers can draw and play with the cards.",
+    tech: "Technology used: React JS",
   },
   {
     id: 2,
     name: "Foundry Virtual Tabletop Content",
     image: "assets/images/foundry-work.png",
-    github1:
-      "https://github.com/jesuisfrog/Foundry-Work",
+    github:
+      "https://github.com/jesuisfrog/Foundry-Work/blob/main/README.md",
 
     description:
       "Custom setting and modules for Foundry VTT.",
-    frontend: "Technology used: Vanilla Javascript, CSS, Handlebars",
-    backend: "",
+    tech: "Technology used: Vanilla Javascript, CSS, Handlebars",
   },
 ];

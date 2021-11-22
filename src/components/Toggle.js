@@ -24,6 +24,7 @@ function Toggle() {
     }, [theme]);
 
     return (
+        
         <div className="container--toggle">
             {
                 togClass === "light" ?
