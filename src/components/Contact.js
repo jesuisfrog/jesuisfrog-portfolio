@@ -20,7 +20,7 @@ class Contact extends Component {
             <h3>Contact</h3>
             <a
               className="btn btn-social-icon btn-linkedin"
-              href=" www.linkedin.com/in/michaelbaglio"
+              href="https://www.linkedin.com/in/michaelbaglio/"
             >
               <i className="fa fa-linkedin" />
             </a>
