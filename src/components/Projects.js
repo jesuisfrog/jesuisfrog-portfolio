@@ -18,143 +18,143 @@ class ProjectCard extends Component {
 
   render() {
     const directory = this.props.projects.map((project) => {
-        return (
-          <div className="container" key={project.id}>
-            <div key={project.id} className="row m-20">
-              <div className="col-md-4">
-                <h3
+      return (
+        <div className="container" key={project.id}>
+          <div key={project.id} className="row m-20">
+            <div className="col-md-4">
+              <h3
+                style={{
+                  marginLeft: 20,
+                  marginBottom: 40,
+                  ontSize: "5em",
+                  textShadow: "2px 2px 8px rgba(0, 0, 0, 0.3)",
+                  textAlign: "left",
+                }}
+              >
+                {project.name}
+              </h3>
+
+              <div className="col ">
+                <p
                   style={{
-                    marginLeft: 20,
-                    marginBottom: 40,
+                    textAlign: "left",
+                    fontStyle: "italic",
+                  }}
+                >
+                  {project.description}
+                </p>
+              </div>
+              <div className="col ">
+                <h5
+                  style={{
+                    marginTop: 130,
                     ontSize: "5em",
-                    textShadow: "2px 2px 8px rgba(0, 0, 0, 0.3)",
+                    fontStyle: "italic",
+
                     textAlign: "left",
                   }}
                 >
-                  {project.name}
-                </h3>
-
-                <div className="col ">
-                  <p
-                    style={{
-                      textAlign: "left",
-                      fontStyle: "italic",
-                    }}
-                  >
-                    {project.description}
-                  </p>
-                </div>
-                <div className="col ">
-                  <h5
-                    style={{
-                      marginTop: 130,
-                      ontSize: "5em",
-                      fontStyle: "italic",
-
-                      textAlign: "left",
-                    }}
-                  >
-                    {project.tech}
-                  </h5>
-                </div>
-              </div>
-              <div className="col-md-8 ml-auto  text-white">
-                <div className="row m-20">
-                  <div className="col-xl-8 m-auto">
-                    <img
-                      id="pic"
-                      style={{
-                        alignItems: "center",
-                      }}
-                      width="100%"
-                      src={project.image}
-                      alt={project.name}
-                    />
-                  </div>
-                </div>
-                {
-                 !project.live ?
-                    <div
-                      className="row "
-                      style={{
-                        marginTop: 20,
-                      }}
-                    >
-                      <div className="col-3 d-flex align-items-stretch ml-auto mr-auto mt-3">
-                        <Button
-                          style={{
-                            backgroundColor: "#ffffff",
-                            color: "#ffffff",
-                            borderRadius: 5,
-                            width: 200,
-                          }}
-                        >
-                          <a
-                            href={project.github}
-                            style={{
-                              color: "#000000",
-                            }}
-                          >
-                            GITHUB
-                          </a>
-                        </Button>
-                      </div>
-                    </div>
-                 :
-                    <div
-                      className="row "
-                      style={{
-                        marginTop: 20,
-                      }}
-                    >
-                      <div className="col-3 d-flex align-items-stretch ml-auto mt-3">
-                        <Button
-                          style={{
-                            backgroundColor: "#ffffff",
-                            color: "#000000",
-                            borderRadius: 5,
-                            width: 300,
-                          }}
-                        >
-                          <a
-                            href={project.live}
-                            style={{
-                              color: "#000000",
-                            }}
-                          >
-                            VISIT
-                          </a>
-                        </Button>
-                      </div>
-                      <div className="col-3 d-flex align-items-stretch mr-auto mt-3">
-                        <Button
-                          style={{
-                            backgroundColor: "#ffffff",
-                            color: "#ffffff",
-                            borderRadius: 5,
-                            width: 200,
-                          }}
-                        >
-                          <a
-                            href={project.github1}
-                            style={{
-                              color: "#000000",
-                            }}
-                          >
-                            GITHUB
-                          </a>
-                        </Button>
-                      </div>
-                    </div>
-
-                }
+                  {project.tech}
+                </h5>
               </div>
             </div>
-            <div className="row">
-              <hr style={{ width: 800, color: "#ffffff" }}></hr>
+            <div className="col-md-8 ml-auto  text-white">
+              <div className="row m-20">
+                <div className="col-xl-8 m-auto">
+                  <img
+                    id="pic"
+                    style={{
+                      alignItems: "center",
+                    }}
+                    width="100%"
+                    src={project.image}
+                    alt={project.name}
+                  />
+                </div>
+              </div>
+              {
+                !project.live ?
+                  <div
+                    className="row "
+                    style={{
+                      marginTop: 20,
+                    }}
+                  >
+                    <div className="col-3 d-flex align-items-stretch ml-auto mr-auto mt-3">
+                      <Button
+                        style={{
+                          backgroundColor: "#ffffff",
+                          color: "#ffffff",
+                          borderRadius: 5,
+                          width: 200,
+                        }}
+                      >
+                        <a
+                          href={project.github}
+                          style={{
+                            color: "#000000",
+                          }}
+                        >
+                          GITHUB
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                  :
+                  <div
+                    className="row "
+                    style={{
+                      marginTop: 20,
+                    }}
+                  >
+                    <div className="col-3 d-flex align-items-stretch ml-auto mt-3">
+                      <Button
+                        style={{
+                          backgroundColor: "#ffffff",
+                          color: "#000000",
+                          borderRadius: 5,
+                          width: 300,
+                        }}
+                      >
+                        <a
+                          href={project.live}
+                          style={{
+                            color: "#000000",
+                          }}
+                        >
+                          VISIT
+                        </a>
+                      </Button>
+                    </div>
+                    <div className="col-3 d-flex align-items-stretch mr-auto mt-3">
+                      <Button
+                        style={{
+                          backgroundColor: "#ffffff",
+                          color: "#ffffff",
+                          borderRadius: 5,
+                          width: 200,
+                        }}
+                      >
+                        <a
+                          href={project.github}
+                          style={{
+                            color: "#000000",
+                          }}
+                        >
+                          GITHUB
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+
+              }
             </div>
           </div>
-        );
+          <div className="row">
+            <hr style={{ width: 800, color: "#ffffff" }}></hr>
+          </div>
+        </div>
+      );
     });
 
     return (
