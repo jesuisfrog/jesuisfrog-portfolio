@@ -39,7 +39,7 @@ class Header extends Component {
                   <a href="#contact">Contact</a>
                 </NavItem>
                 <NavItem className="nav-link">
-                  <a href="assets/Michael_Baglio_Resume_2021.pdf" target="_blank" download>Resume</a>
+                  <a href="assets/Michael-Baglio-2024.pdf" target="_blank" download>Resume</a>
                 </NavItem>
                 <Toggle />
               </Nav>
